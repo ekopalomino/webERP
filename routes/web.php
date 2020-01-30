@@ -11,13 +11,12 @@
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
-});*/
+});
 
-Route::get('/','Apps\DashboardController@index')->name('dashboard.index');
 Route::get('lang/{language}', ['as' => 'lang.switch', 'uses' => 'Apps\LanguageController@switchLang']);
-
+Route::get('dashboard','Apps\DashboardController@index')->name('dashboard.index');
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');

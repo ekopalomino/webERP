@@ -37,7 +37,7 @@
 						{{trans('pages.welcome')}}
 					</span>
 					<span class="login100-form-avatar">
-						<img src="{{ asset('public/assets/images/avatar-01.jpg') }}" alt="AVATAR">
+						<img src="{{ asset('public/assets/images/logo_small.jpg') }}" alt="AVATAR">
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">

@@ -17,3 +17,7 @@
 
 Route::get('/','Apps\DashboardController@index')->name('dashboard.index');
 Route::get('lang/{language}', ['as' => 'lang.switch', 'uses' => 'Apps\LanguageController@switchLang']);
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
